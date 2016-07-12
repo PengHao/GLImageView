@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B0C1A551CDDE0F6005F1EFE /* AGUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B0C1A521CDDE0F6005F1EFE /* AGUtility.cpp */; };
+		4B2B8EEE1D34F64F001153E0 /* ImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2B8EED1D34F64F001153E0 /* ImagesView.m */; };
 		4B52C1901CDB3850008374BA /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B52C18F1CDB3850008374BA /* GLView.mm */; };
 		4B52C1EF1CDB3F57008374BA /* IOSGraphicsContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B52C1BE1CDB3F57008374BA /* IOSGraphicsContext.mm */; };
 		4B52C1F01CDB3F57008374BA /* AirGraphicsUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B52C1C11CDB3F57008374BA /* AirGraphicsUtility.cpp */; };
@@ -57,6 +58,8 @@
 		4B0C1A521CDDE0F6005F1EFE /* AGUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AGUtility.cpp; sourceTree = "<group>"; };
 		4B0C1A531CDDE0F6005F1EFE /* AGUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGUtility.h; sourceTree = "<group>"; };
 		4B0C1A541CDDE0F6005F1EFE /* AirGraphType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirGraphType.h; sourceTree = "<group>"; };
+		4B2B8EEC1D34F64F001153E0 /* ImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesView.h; sourceTree = "<group>"; };
+		4B2B8EED1D34F64F001153E0 /* ImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesView.m; sourceTree = "<group>"; };
 		4B52C18E1CDB3850008374BA /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
 		4B52C18F1CDB3850008374BA /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
 		4B52C1BA1CDB3F57008374BA /* AirGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirGraphics.h; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				4BEF97531CDB347C00B7CEE5 /* LaunchScreen.storyboard */,
 				4BEF97561CDB347C00B7CEE5 /* Info.plist */,
 				4BEF97451CDB347C00B7CEE5 /* Supporting Files */,
+				4B2B8EEC1D34F64F001153E0 /* ImagesView.h */,
+				4B2B8EED1D34F64F001153E0 /* ImagesView.m */,
 			);
 			path = GLImageView;
 			sourceTree = "<group>";
@@ -382,7 +387,7 @@
 				TargetAttributes = {
 					4BEF97411CDB347C00B7CEE5 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 3FQZ84DGYW;
+						DevelopmentTeam = 298LEY82V6;
 					};
 					4BEF975A1CDB347C00B7CEE5 = {
 						CreatedOnToolsVersion = 7.3;
@@ -461,6 +466,7 @@
 				4BEF974A1CDB347C00B7CEE5 /* AppDelegate.m in Sources */,
 				4BEF97471CDB347C00B7CEE5 /* main.m in Sources */,
 				4B52C1F61CDB3F57008374BA /* AirStringUtility.cpp in Sources */,
+				4B2B8EEE1D34F64F001153E0 /* ImagesView.m in Sources */,
 				4B52C1FD1CDB4716008374BA /* IOSContext.mm in Sources */,
 				4B52C1F11CDB3F57008374BA /* AirParticleSysRender.cpp in Sources */,
 				4B52C1EF1CDB3F57008374BA /* IOSGraphicsContext.mm in Sources */,
@@ -617,7 +623,7 @@
 				INFOPLIST_FILE = GLImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aircpp.GLImageView;
+				PRODUCT_BUNDLE_IDENTIFIER = net.medlinker.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -634,7 +640,7 @@
 				INFOPLIST_FILE = GLImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aircpp.GLImageView;
+				PRODUCT_BUNDLE_IDENTIFIER = net.medlinker.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
