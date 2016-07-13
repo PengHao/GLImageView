@@ -22,7 +22,7 @@
     [super viewDidLoad];
     memset(t, 0, 100);
     
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
@@ -39,7 +39,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 300;
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -50,33 +50,32 @@
         i = 19;
     }
 
-//    ImagesView *view = nil;
-//    if (!cell) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
-//        view = [[ImagesView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
-//        view.backgroundColor = [UIColor whiteColor];
-//        
-//        [cell addSubview:view];
-//    } else {
-//    }
-//    [view update];
-//    
-    
-    
-    
-    GLView *glView = nil;
+    ImagesView *view = nil;
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
-        glView = [[GLView alloc] initWithFrame: CGRectMake(0, 0, 300, 300)];
-        glView.tag = 999;
-        [cell addSubview:glView];
+        view = [[ImagesView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        view.backgroundColor = [UIColor whiteColor];
+        
+        [cell addSubview:view];
     } else {
-        glView = [cell viewWithTag:999];
     }
-    [glView removeAllImages];
-    [glView addImage:[NSString stringWithFormat:@"%d.jpg", i] frame:CGRectMake(5, 5, 290, 290)];
+    [view update];
     
-//
+    
+    
+    
+//    GLView *glView = nil;
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+//        glView = [[GLView alloc] initWithFrame: CGRectMake(0, 0, 300, 300)];
+//        glView.tag = 999;
+//        [cell addSubview:glView];
+//    } else {
+//        glView = [cell viewWithTag:999];
+//    }
+//    [glView removeAllImages];
+//    [glView addImage:[NSString stringWithFormat:@"%d.jpg", i] frame:CGRectMake(5, 5, 290, 290)];
+    
     return cell;
 }
 
